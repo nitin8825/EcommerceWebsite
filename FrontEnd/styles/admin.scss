@@ -1,0 +1,23 @@
+//base
+@import '~normalize.css';
+@import './base/colors.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+@import './base/configuration.scss';
+//PrimeNg
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/lara-light-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+
+//Shared
+@import './apps/admin/shared/shell.scss';
+@import './apps//admin/shared/sidebar.scss';
+
+//Users
+@import './libs/users/users.scss';
+//Libs
+@import './libs/ui/ui.scss';
+
+//Dashboard
+@import './apps/admin/dashboard.scss';

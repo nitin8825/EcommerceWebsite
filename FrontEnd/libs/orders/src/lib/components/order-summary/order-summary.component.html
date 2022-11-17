@@ -1,0 +1,24 @@
+<div class="order-summary">
+    <h3>Order Summary</h3>
+    <div class="summary-price">
+        <span>Items Price</span>
+        <span>{{ totalPrice | currency }}</span>
+    </div>
+    <div class="summary-price">
+        <span>Packing & Shipping</span>
+        <span class="free">Free</span>
+    </div>
+    <div class="to-checkout">
+        <div class="summary-price">
+            <span>Total Price</span>
+            <span>{{ totalPrice | currency }}</span>
+        </div>
+        <div class="pay-on-delivery mt-4 mb-4">
+            <p-radioButton name="Pay-Option" value="Pay-On-Delivery" class="mr-2" [(ngModel)]="payOption" inputId="payondelivery"></p-radioButton>
+            <label for="payondelivery">Pay On Delivery</label>
+        </div>
+        <div class="checkout-button" *ngIf="!isCheckout">
+            <p-button label="Checkout" (onClick)="navigateToCheckout()"></p-button>
+        </div>
+    </div>
+</div>
